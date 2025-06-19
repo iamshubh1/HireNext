@@ -70,7 +70,7 @@ npm install
 Create a .env file:
 
 ```dotenv
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=http://localhost:1271/api/v1/{}
 ```
 Start the development server:
 ```bash
@@ -135,4 +135,4 @@ This project is licensed under the [MIT License](LICENSE). See the `LICENSE` fil
 HireNext Team
 – Live Demo: [hirenext-liard.vercel.app](https://hirenext-liard.vercel.app)
 – GitHub: [iamshubh1/HireNext](https://github.com/iamshubh1/HireNext)
-– Email: [mail@shubhamJha](mailto:youremail@example.com)
+– Email: [mail@shubhamJha](mailto:shubhamjha9721@gmail.com)
