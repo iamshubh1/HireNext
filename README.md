@@ -1,135 +1,138 @@
 # HireNext
 
-[![Vercel](https://img.shields.io/badge/deployed%20on-Vercel-000?logo=vercel)](https://hirenext-liard.vercel.app/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen)](https://hirenext-liard.vercel.app/)  
+[![Vite](https://img.shields.io/badge/Vite-%23646cff?logo=vite&logoColor=white)](https://vitejs.dev/)  
+[![React](https://img.shields.io/badge/React-%2361DAFB?logo=react&logoColor=white)](https://reactjs.org/)  
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=&logoColor=white)](https://ui.shadcn.com/)  
+[![Express](https://img.shields.io/badge/Express.js-%23404d59?logo=express&logoColor=white)](https://expressjs.com/)  
+[![Node.js](https://img.shields.io/badge/Node.js-%23339933?logo=node.js&logoColor=white)](https://nodejs.org/)  
+[![MongoDB](https://img.shields.io/badge/MongoDB-%2347A248?logo=mongodb&logoColor=white)](https://mongodb.com/)
 
-A modern job‑matching platform connecting job seekers and employers. Built with **Next.js**, **React**, and **Tailwind CSS**, and deployed on Vercel.
-
----
-
-## 🚀 Live Demo
-
-Try it out: https://hirenext-liard.vercel.app/
-
----
-
-## 📖 Table of Contents
-
-- [Features](#-features)  
-- [Tech Stack](#-tech-stack)  
-- [Getting Started](#-getting-started)  
-  - [Prerequisites](#prerequisites)  
-  - [Installation](#installation)  
-  - [Environment Variables](#environment-variables)  
-  - [Running Locally](#running-locally)  
-- [Usage](#-usage)  
-- [Contributing](#-contributing)  
-- [License](#-license)  
-- [Contact](#-contact)  
+A modern, full‑stack hiring platform that streamlines job posting, candidate management, and interview workflows.
 
 ---
 
-## ✨ Features
+## 🚀 Technologies
 
-- **User Authentication** – Sign up / log in for both **candidates** and **employers**  
-- **Role‑Based Dashboards**  
-  - _Candidates_ can browse, search, and apply to jobs  
-  - _Employers_ can post new listings, review applicants  
-- **Job Search** – Filter by keyword, location, category  
-- **Job Posting** – Create, update, and archive job vacancies  
-- **Application Management** – Track application status  
-- **Responsive UI** – Mobile‑first design with Tailwind CSS  
-- **Server‑Side Rendering** – Fast initial load and SEO benefits  
-
-*(Add screenshots or GIFs here to showcase the UI.)*
+- **Frontend**: Vite • React • [shadcn/ui](https://ui.shadcn.com/)  
+- **Backend**: Express.js • Node.js  
+- **Database**: MongoDB (or adjust to your preferred DB)  
+- **Deployment**: Vercel (frontend) • Your preferred host (backend)  
 
 ---
 
-## 🛠 Tech Stack
+## 🎯 Features
 
-- **Front‑end:** Next.js · React · Tailwind CSS  
-- **Auth:** NextAuth.js (or your chosen auth library)  
-- **Database:** (e.g. PostgreSQL, MongoDB, SQLite) + ORM/ODM (Prisma, Mongoose, etc.)  
-- **API:** Next.js API Routes (or Express)  
-- **Deployment:** Vercel  
+- **Authentication**: Secure signup/login with JWT  
+- **Job Management**: Create, edit, and archive job postings  
+- **Candidate Tracking**: View and filter applications per job  
+- **Interview Scheduling**: Calendar invites and reminders  
+- **Real‑time Chat**: In‑app messaging with candidates  
+- **Admin Dashboard**: Analytics on applicants, open roles, and time‑to‑hire  
+
+> 🔥 Check it out live: [https://hirenext-liard.vercel.app/](https://hirenext-liard.vercel.app/)
 
 ---
 
-## 🏁 Getting Started
+## 💻 Getting Started
 
-### Prerequisites
+### 1. Clone the repo
 
-- Node.js v14+  
-- npm or yarn  
-- (Optional) A database service (if not using a file‑based DB)
-
-### Installation
-
-1. **Clone the repo**  
-   ```bash
-   git clone https://github.com/iamshubh1/HireNext.git
-   cd HireNext
-
-2. Install dependencies  
-   ```
-   npm install
-   # or
-   yarn install
-   ```
-
-3. Configure environment variables  
-   Copy the example file and fill in your own values:
-   ```
-   cp .env.example .env.local
-   ```
-   Set:
-   ```
-   NEXTAUTH_URL=http://localhost:3000
-   NEXTAUTH_SECRET=your-secret
-   DATABASE_URL=your-database-connection-string
-   # Additional keys (e.g., for email or file uploads)
-   ```
-
-### Running Locally
-
+```bash
+git clone https://github.com/iamshubh1/HireNext.git
+cd HireNext
 ```
+
+### 2. Backend Setup
+```bash
+cd backend
+npm install
+Create a .env file based on .env.example:
+```
+```dotenv
+PORT=1271
+MONGODB_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret
+Start the server:
+```
+```bash
 npm run dev
-# or
-yarn dev
+```
+### The API will be available at http://localhost:1271.
+
+## 3. Frontend Setup
+
+```bash
+cd ../frontend
+npm install
 ```
 
-Open http://localhost:3000 in your browser.
+Create a .env file:
+
+```dotenv
+VITE_API_URL=http://localhost:5000/api
+```
+Start the development server:
+```bash
+npm run dev
+```
+The app will run at http://localhost:5173.
 ---
-## 🎬 Usage
-Browse Jobs: View latest listings on the home page.
-
-Search: Use the search bar or filters to find relevant roles.
-
-Apply: Log in as a candidate, fill out your profile, and submit applications.
-
-Post a Job: Log in as an employer, go to your dashboard, and create new postings.
-
-(Describe any other special flows, e.g. email verification, resume upload, notifications.)
-
+## 🗂 Project Structure
+```bash
+HireNext/
+├── backend/            # Express API
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── .env.example
+│   └── server.js
+├── frontend/           # Vite + React + shadcn/ui
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.jsx
+│   ├── public/
+│   └── vite.config.js
+├── LICENSE
+└── README.md
+```
 ---
-
 ## 🤝 Contributing
-Contributions are welcome! Please:
 
-Fork the repo
+Fork this repo
 
-Create your feature branch (git checkout -b feature/YourFeature)
+Create a branch (`git checkout -b feature/fooBar`)
 
-Commit your changes (git commit -m 'Add some feature')
+Commit your changes (`git commit -m 'Add fooBar'`)
 
-Push to the branch (git push origin feature/YourFeature)
+Push to your branch (`git push origin feature/fooBar`)
 
 Open a Pull Request
 
-Please read CONTRIBUTING.md for details on code style and the PR process.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
 ---
+
+## 🛠️ Scripts
+
+| Command         | Description                      |
+| :-------------- | :------------------------------- |
+| `npm run dev`   | Run both frontend & backend in dev mode |
+| `npm run build` | Build the frontend for production |
+| `npm start`     | Start the backend in production mode |
+
+---
+
 ## 📄 License
-This project is licensed under the MIT License. See LICENSE for details.
+
+This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for details.
+
 ---
-## 📬 Contact
-Shubh – @iamshubh1
-Project Link: https://github.com/iamshubh1/HireNext
+
+## 📫 Contact
+
+HireNext Team
+– Live Demo: [hirenext-liard.vercel.app](https://hirenext-liard.vercel.app)
+– GitHub: [iamshubh1/HireNext](https://github.com/iamshubh1/HireNext)
+– Email: [mail@shubhamJha](mailto:youremail@example.com)
