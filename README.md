@@ -14,7 +14,7 @@ A modern, full‑stack hiring platform that streamlines job posting, candidate m
 
 ## 🚀 Technologies
 
-- **Frontend**: Vite • React • [shadcn/ui](https://ui.shadcn.com/)  
+- **Frontend**: Vite • React • shadcn/ui  
 - **Backend**: Express.js • Node.js  
 - **Database**: MongoDB (or adjust to your preferred DB)  
 - **Deployment**: Vercel (frontend) • Your preferred host (backend)  
@@ -30,7 +30,7 @@ A modern, full‑stack hiring platform that streamlines job posting, candidate m
 - **Real‑time Chat**: In‑app messaging with candidates  
 - **Admin Dashboard**: Analytics on applicants, open roles, and time‑to‑hire  
 
-> 🔥 Check it out live: [https://hirenext-liard.vercel.app/](https://hirenext-liard.vercel.app/)
+> 🔥 Check it out live: [HireNext](https://hirenext-liard.vercel.app/)
 
 ---
 
@@ -110,7 +110,6 @@ Push to your branch (`git push origin feature/fooBar`)
 
 Open a Pull Request
 
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 
 ---
 
@@ -122,17 +121,15 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
 | `npm run build` | Build the frontend for production |
 | `npm start`     | Start the backend in production mode |
 
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for details.
 
 ---
 
 ## 📫 Contact
 
 HireNext Team
-– Live Demo: [hirenext-liard.vercel.app](https://hirenext-liard.vercel.app)
-– GitHub: [iamshubh1/HireNext](https://github.com/iamshubh1/HireNext)
-– Email: [mail@shubhamJha](mailto:shubhamjha9721@gmail.com)
+
+– **Live Demo**: [HireNext](https://hirenext-liard.vercel.app)
+
+– **GitHub**: [iamshubh1/HireNext](https://github.com/iamshubh1/HireNext)
+
+– **Email**: [mail@shubhamJha](mailto:shubhamjha9721@gmail.com)
